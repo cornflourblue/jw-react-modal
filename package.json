@@ -1,0 +1,23 @@
+{
+    "name": "jw-react-modal",
+    "version": "1.0.0",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/cornflourblue/jw-react-modal.git"
+    },
+    "main": "./lib/JwModal.js",
+    "license": "MIT",
+    "scripts": {
+        "build": "babel src -d lib"
+    },
+    "devDependencies": {
+        "babel-cli": "^6.26.0",
+        "babel-core": "^6.21.0",
+        "babel-preset-env": "^1.6.1",
+        "babel-preset-react": "^6.16.0",
+        "babel-preset-stage-0": "^6.24.1",
+        "prop-types": "^15.6.0",
+        "react": "^16.0.0",
+        "react-dom": "^16.0.0"
+    }
+}
