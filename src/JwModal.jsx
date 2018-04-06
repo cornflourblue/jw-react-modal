@@ -34,6 +34,8 @@ const propTypes = {
 };
 
 class JwModal extends React.Component {
+    //--- static methods ---//
+
     static modals = [];
 
     static open = (id) => (e) => {
@@ -54,7 +56,7 @@ class JwModal extends React.Component {
         document.body.classList.remove('jw-modal-open');
     }
 
-    //---
+    //--- instance methods ---//
 
     styles = { ...defaultStyles };
 
@@ -67,8 +69,6 @@ class JwModal extends React.Component {
 
         // merge custom styles with default styles
         if (props.style) {
-            console.log('props.style', props.style);
-
             this.styles = {
                 modal: { ...defaultStyles.modal, ...props.style.modal },
                 body: { ...defaultStyles.body, ...props.style.body },
